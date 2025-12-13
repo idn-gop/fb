@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.B Talent World - Professional Phone Flash & Repair Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>F.B Talent<span class="highlight">World</span></span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#firmware"><i class="fas fa-download"></i> Firmware Download</a>
+                        <a href="#request"><i class="fas fa-file-alt"></i> Request Any File</a>
+                        <a href="#flash-tool"><i class="fas fa-bolt"></i> Flash Tool</a>
+                        <a href="#network-unlock"><i class="fas fa-unlock"></i> Network Unlock</a>
+                        <a href="#frp-bypass"><i class="fas fa-shield-alt"></i> FRP Bypass APK</a>
+                        <a href="#phone-apps"><i class="fas fa-th-large"></i> Phone Apps</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#license"><i class="fas fa-key"></i> License Activation</a>
+                        <a href="#credits"><i class="fas fa-coins"></i> Box & Dongle Credits</a>
+                    </div>
+                </div>
+                
+                <a href="#news" class="nav-link">News</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Trusted Since 2025</span>
+            </div>
+            <h1 class="hero-title">
+                Professional <span class="gradient-text">Phone Flash</span> 
+                <br>& Repair Services
+            </h1>
+            <p class="hero-subtitle">
+                Your one-stop solution for firmware downloads, flash tools, network unlocking, 
+                and all phone repair needs. Fast, reliable, and professional service.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket"></i> Explore Services
+                </a>
+                <a href="#contact" class="btn btn-outline btn-lg">
+                    <i class="fas fa-headset"></i> Contact Us
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10000">0</span>+
+                    <span class="stat-label">Files Available</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5000">0</span>+
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>+
+                    <span class="stat-label">Flash Tools</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="screen-content">
+                        <i class="fas fa-microchip"></i>
+                        <span>Flash Ready</span>
+                    </div>
+                </div>
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Our <span class="gradient-text">Premium</span> Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for all your phone flashing and repair needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Firmware Download -->
+                <div class="service-card" id="firmware">
+                    <div class="service-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Firmware Download</h3>
+                    <p>Access our extensive library of official firmware files for all major phone brands.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Samsung, Xiaomi, Oppo, Vivo</li>
+                        <li><i class="fas fa-check"></i> Original & Tested Files</li>
+                        <li><i class="fas fa-check"></i> Fast Download Speed</li>
+                    </ul>
+                    <a href="#" class="btn btn-service">Browse Firmware <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Request File -->
+                <div class="service-card" id="request">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Request Any File</h3>
+                    <p>Can't find what you need? Request any firmware or tool and we'll get it for you.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Quick Response Time</li>
+                        <li><i class="fas fa-check"></i> Any Brand Supported</li>
+                        <li><i class="fas fa-check"></i> Priority Processing</li>
+                    </ul>
+                    <a href="#" class="btn btn-service">Request Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Flash Tool -->
+                <div class="service-card featured" id="flash-tool">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Flash Tool</h3>
+                    <p>Professional flashing tools for seamless firmware installation and phone repair.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> SP Flash Tool, Odin, QFIL</li>
+                        <li><i class="fas fa-check"></i> Latest Versions</li>
+                        <li><i class="fas fa-check"></i> Tutorial Included</li>
+                    </ul>
+                    <a href="#" class="btn btn-service">Get Tools <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Network Unlock -->
+                <div class="service-card" id="network-unlock">
+                    <div class="service-icon">
+                        <i class="fas fa-unlock"></i>
+                    </div>
+                    <h3>Network Unlock</h3>
+                    <p>Unlock your phone from any carrier restriction safely and permanently.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> All Carriers Supported</li>
+                        <li><i class="fas fa-check"></i> Permanent Unlock</li>
+                        <li><i class="fas fa-check"></i> 100% Safe Method</li>
+                    </ul>
+                    <a href="#" class="btn btn-service">Unlock Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- FRP Bypass -->
+                <div class="service-card" id="frp-bypass">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>FRP Bypass APK</h3>
+                    <p>Bypass Google account verification (FRP) with our tested and working APK tools.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Latest Android Support</li>
+                        <li><i class="fas fa-check"></i> Easy to Use</li>
+                        <li><i class="fas fa-check"></i> Step-by-Step Guide</li>
+                    </ul>
+                    <a href="#" class="btn btn-service">Download APK <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Phone Apps -->
+                <div class="service-card" id="phone-apps">
+                    <div class="service-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Phone Apps</h3>
+                    <p>Essential applications for phone technicians and repair professionals.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Diagnostic Tools</li>
+                        <li><i class="fas fa-check"></i> System Apps</li>
+                        <li><i class="fas fa-check"></i> Utility Apps</li>
+                    </ul>
+                    <a href="#" class="btn btn-service">View Apps <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Shop Now</span>
+                <h2 class="section-title">License & <span class="gradient-text">Credits</span></h2>
+                <p class="section-subtitle">Official licenses and credits for professional tools</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- License Activation -->
+                <div class="product-card" id="license">
+                    <div class="product-image">
+                        <i class="fas fa-key"></i>
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>License (Box/Dongle) 1 Year Activation</h3>
+                        <p>Activate your professional box or dongle with our official license keys.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-check-circle"></i> UMT Dongle</span>
+                            <span><i class="fas fa-check-circle"></i> Miracle Box</span>
+                            <span><i class="fas fa-check-circle"></i> Chimera Tool</span>
+                            <span><i class="fas fa-check-circle"></i> Octoplus</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-value">Contact Us</span>
+                            </div>
+                            <a href="#contact" class="btn btn-primary">Get License</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box & Dongle Credits -->
+                <div class="product-card" id="credits">
+                    <div class="product-image">
+                        <i class="fas fa-coins"></i>
+                        <div class="product-badge">Hot Deal</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Box & Dongles Credits</h3>
+                        <p>Purchase credits for your existing tools and unlock more features.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-check-circle"></i> Server Credits</span>
+                            <span><i class="fas fa-check-circle"></i> Unlock Credits</span>
+                            <span><i class="fas fa-check-circle"></i> Instant Delivery</span>
+                            <span><i class="fas fa-check-circle"></i> Best Price</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-value">Contact Us</span>
+                            </div>
+                            <a href="#contact" class="btn btn-primary">Buy Credits</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Stay Updated</span>
+                <h2 class="section-title">Latest <span class="gradient-text">News</span></h2>
+                <p class="section-subtitle">Get the latest updates on firmware releases and tool updates</p>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250/1a1a2e/00d4ff?text=News+1" alt="News">
+                        <span class="news-category">Firmware</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 5, 2025</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3>New Samsung A Series Firmware Released</h3>
+                        <p>Latest firmware update for Samsung Galaxy A54, A34, and A14 now available for download.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250/1a1a2e/00d4ff?text=News+2" alt="News">
+                        <span class="news-category">Tools</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 4, 2025</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3>UMT Dongle v8.0 Update Available</h3>
+                        <p>Major update with new features and support for latest Qualcomm and MediaTek chipsets.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250/1a1a2e/00d4ff?text=News+3" alt="News">
+                        <span class="news-category">Tutorial</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 3, 2025</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Complete FRP Bypass Guide 2025</h3>
+                        <p>Step-by-step guide to bypass FRP on Android 14 devices using latest methods.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="news-footer">
+                <a href="#" class="btn btn-outline">View All News <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-badge">About Us</span>
+                    <h2 class="section-title">Why Choose <span class="gradient-text">F.B Talent World</span>?</h2>
+                    <p class="about-text">
+                        We are a team of professional phone technicians with years of experience in mobile phone 
+                        flashing, repair, and unlocking services. Our mission is to provide the best quality 
+                        firmware files, tools, and support to technicians worldwide.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Quality Guaranteed</h4>
+                                <p>All files are tested and verified before upload</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Support</h4>
+                                <p>We're always here to help you with any issues</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Regular Updates</h4>
+                                <p>New firmware and tools added daily</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Best Prices</h4>
+                                <p>Competitive pricing for all our services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="experience-badge">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p>+265 888 22 49 74</p>
+                        <a href="https://wa.me/265888224974" target="_blank" class="contact-link">Chat Now</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h4>Telegram</h4>
+                        <p>@FBTalentWorld</p>
+                        <a href="#" class="contact-link">Join Channel</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>support@fbtalentworld.com</p>
+                        <a href="#" class="contact-link">Send Email</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <h4>Facebook</h4>
+                        <p>F.B Talent World</p>
+                        <a href="#" class="contact-link">Follow Us</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected></option>
+                                <option value="firmware">Firmware Request</option>
+                                <option value="unlock">Network Unlock</option>
+                                <option value="license">License Purchase</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <i class="fas fa-list"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>F.B Talent<span class="highlight">World</span></span>
+                    </div>
+                    <p>Your trusted partner for professional phone flash and repair services since 2025.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1A52jeXXn5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/265888224974" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#firmware">Firmware Download</a></li>
+                        <li><a href="#flash-tool">Flash Tools</a></li>
+                        <li><a href="#network-unlock">Network Unlock</a></li>
+                        <li><a href="#frp-bypass">FRP Bypass</a></li>
+                        <li><a href="#license">License Activation</a></li>
+                        <li><a href="#credits">Box Credits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest updates and news.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <h4>We Accept</h4>
+                <div class="payment-icons">
+                    <div class="payment-icon" title="M-Pamba (TNM Mobile Money)">
+                        <img src="mpamba.webp" alt="M-Pamba">
+                    </div>
+                    <div class="payment-icon" title="Airtel Money">
+                        <img src="airtel.webp" alt="Airtel Money">
+                    </div>
+                    <div class="payment-icon" title="National Bank">
+                        <img src="nb.webp" alt="National Bank">
+                    </div>
+                    <div class="payment-icon" title="PayPal">
+                        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+                    </div>
+                    <div class="payment-icon" title="Binance">
+                        <img src="binance.webp" alt="Binance">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 F.B Talent World. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget">
+        <!-- Chat Options (WhatsApp & Telegram) -->
+        <div class="chat-options" id="chatOptions">
+            <a href="https://wa.me/265888224974?text=Hello%20F.B%20Talent%20World,%20I%20want%20to%20ask..." target="_blank" class="chat-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <div class="chat-option-info">
+                    <span class="chat-option-title">WhatsApp</span>
+                    <span class="chat-option-status">Online</span>
+                </div>
+            </a>
+            <a href="https://t.me/FBTalentWorld" target="_blank" class="chat-option telegram">
+                <i class="fab fa-telegram"></i>
+                <div class="chat-option-info">
+                    <span class="chat-option-title">Telegram</span>
+                    <span class="chat-option-status">Online</span>
+                </div>
+            </a>
+            <div class="chat-option livechat" id="openLiveChat">
+                <i class="fas fa-comments"></i>
+                <div class="chat-option-info">
+                    <span class="chat-option-title">Live Chat</span>
+                    <span class="chat-option-status">Quick Response</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Toggle Button -->
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+            <i class="fas fa-times"></i>
+            <span class="chat-badge">1</span>
+        </button>
+    </div>
+
+    <!-- Live Chat Box -->
+    <div class="livechat-box" id="liveChatBox">
+        <div class="livechat-header">
+            <div class="livechat-header-info">
+                <div class="livechat-avatar">
+                    <i class="fas fa-headset"></i>
+                    <span class="online-dot"></span>
+                </div>
+                <div class="livechat-header-text">
+                    <h4>F.B Talent Support</h4>
+                    <span>We typically reply in minutes</span>
+                </div>
+            </div>
+            <button class="livechat-close" id="closeLiveChat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="livechat-messages" id="chatMessages">
+            <div class="chat-date">Today</div>
+            <div class="message bot">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>👋 Hello! Welcome to F.B Talent World!</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            <div class="message bot">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>How can we help you? Please select a topic or type your question:</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            
+            <!-- Quick Replies -->
+            <div class="quick-replies">
+                <button class="quick-reply" data-message="I want to ask about Firmware">📱 Firmware</button>
+                <button class="quick-reply" data-message="I need Flash Tool">⚡ Flash Tool</button>
+                <button class="quick-reply" data-message="I need Network Unlock">🔓 Network Unlock</button>
+                <button class="quick-reply" data-message="I need License/Credits">🔑 License</button>
+                <button class="quick-reply" data-message="I have other questions">💬 Other</button>
+            </div>
+        </div>
+        
+        <div class="livechat-input">
+            <input type="text" id="chatInput" placeholder="Type a message...">
+            <button class="send-btn" id="sendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
