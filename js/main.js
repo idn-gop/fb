@@ -602,4 +602,133 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // ========================================
+    // Product Search & Filter
+    // ========================================
+    const productSearch = document.getElementById('productSearch');
+    const clearSearch = document.getElementById('clearSearch');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const resultsCount = document.getElementById('resultsCount');
+    
+    // Get all product cards from all sections
+    function getAllProductCards() {
+        return document.querySelectorAll('.product-card');
+    }
+    
+    // Get all product sections
+    function getAllProductSections() {
+        return document.querySelectorAll('.products');
+    }
+    
+    // Current filter state
+    let currentFilter = 'all';
+    let currentSearch = '';
+    
+    // Filter and search products
+    function filterAndSearchProducts() {
+        const cards = getAllProductCards();
+        let visibleCount = 0;
+        
+        cards.forEach(card => {
+            const cardText = card.textContent.toLowerCase();
+            const cardSection = card.closest('section');
+            const sectionId = cardSection ? cardSection.id : '';
+            
+            // Determine card category
+            let cardCategory = 'license';
+            if (sectionId === 'credits' || cardText.includes('credits') || cardText.includes('credit')) {
+                cardCategory = 'credits';
+            } else if (sectionId === 'network-unlock-services' || cardText.includes('unlock') || cardText.includes('docomo') || cardText.includes('softbank')) {
+                cardCategory = 'unlock';
+            }
+            
+            // Check filter match
+            const filterMatch = currentFilter === 'all' || cardCategory === currentFilter;
+            
+            // Check search match
+            const searchMatch = currentSearch === '' || cardText.includes(currentSearch.toLowerCase());
+            
+            // Show/hide card
+            if (filterMatch && searchMatch) {
+                card.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+        
+        // Update results count
+        updateResultsCount(visibleCount);
+        
+        // Show/hide sections based on visible cards
+        updateSectionVisibility();
+    }
+    
+    // Update results count text
+    function updateResultsCount(count) {
+        if (currentSearch || currentFilter !== 'all') {
+            resultsCount.innerHTML = `Found <span>${count}</span> product${count !== 1 ? 's' : ''}`;
+        } else {
+            resultsCount.innerHTML = '';
+        }
+    }
+    
+    // Update section visibility
+    function updateSectionVisibility() {
+        const sections = getAllProductSections();
+        sections.forEach(section => {
+            const visibleCards = section.querySelectorAll('.product-card:not(.hidden)');
+            const grid = section.querySelector('.products-grid');
+            if (grid) {
+                if (visibleCards.length === 0) {
+                    grid.style.display = 'none';
+                } else {
+                    grid.style.display = '';
+                }
+            }
+        });
+    }
+    
+    // Search input handler
+    if (productSearch) {
+        productSearch.addEventListener('input', function() {
+            currentSearch = this.value.trim();
+            
+            // Show/hide clear button
+            if (clearSearch) {
+                if (currentSearch) {
+                    clearSearch.classList.add('visible');
+                } else {
+                    clearSearch.classList.remove('visible');
+                }
+            }
+            
+            filterAndSearchProducts();
+        });
+    }
+    
+    // Clear search button
+    if (clearSearch) {
+        clearSearch.addEventListener('click', function() {
+            productSearch.value = '';
+            currentSearch = '';
+            this.classList.remove('visible');
+            filterAndSearchProducts();
+            productSearch.focus();
+        });
+    }
+    
+    // Filter buttons handler
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update filter
+            currentFilter = this.getAttribute('data-filter');
+            filterAndSearchProducts();
+        });
+    });
+
 });
